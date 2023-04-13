@@ -12,6 +12,10 @@ class DropdownPage extends Page {
         return $('/html/body/div[2]/div/div/select/option[2]')
     }
     
+    get option2(){
+        return $('/html/body/div[2]/div/div/select/option[3]')
+    }
+
     /** 
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -19,6 +23,11 @@ class DropdownPage extends Page {
 
     async selectOption1 () {
         await this.option1.click()
+        await browser.pause(1000)
+    }
+
+    async selectOption2() {
+        await this.option2.click()
         await browser.pause(1000)
     }
 

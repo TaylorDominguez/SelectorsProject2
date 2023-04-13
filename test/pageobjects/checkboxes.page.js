@@ -19,10 +19,10 @@ class CheckboxesPage extends Page {
      * e.g. to login using username and password
      */
     async Check () {
-        await browser.pause(3000)
+        await browser.pause(1000)
         await this.checkbox1.click();
         await this.checkbox2.click();
-        await browser.pause(3000)
+        await browser.pause(1000)
     }
 
 

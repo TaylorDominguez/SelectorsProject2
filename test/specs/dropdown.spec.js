@@ -7,4 +7,9 @@ describe('My dropdown page', () => {
         await DropdownPage.selectOption1()
         await expect(DropdownPage.option1).toBeSelected()
     })
+    it('should select option 2', async () => {
+        await DropdownPage.open()
+        await DropdownPage.selectOption2()
+        await expect(DropdownPage.option2).toBeSelected()
+    })
 })
