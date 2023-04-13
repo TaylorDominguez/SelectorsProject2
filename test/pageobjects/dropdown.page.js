@@ -3,7 +3,7 @@ const Page = require('./page');
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class DropdownPage extends Page {
+class dropdownPage extends Page {
     /**
      * define selectors using getter methods
     */
@@ -39,4 +39,4 @@ class DropdownPage extends Page {
     }
 }
 
-module.exports = new DropdownPage();
+module.exports = new dropdownPage();
